@@ -1,7 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
-
-module.exports = nextConfig
+module.exports = {
+  env: {
+    NEXT_MODE: process.env.NEXT_MODE,
+  },
+  images: {
+    domains: ["fe.dev.dxtr.asia"],
+  },
+};
